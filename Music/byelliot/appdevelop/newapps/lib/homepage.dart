@@ -1,13 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:newapps/personpage.dart';
+
+import 'package:newapps/widgets/travelbanner.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          'buddy',
+          style: TextStyle(
+            color: theme.colorScheme.primary,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        centerTitle: true,
+      ),
       bottomNavigationBar: Container(
         color: Colors.white,
         child: const Padding(
@@ -43,17 +55,19 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const PersonPage(),
-              ),
-            );
-          },
-          child: const Text('test page'),
+      body: SafeArea(
+        child: ListView(
+          padding: EdgeInsets.all(20),
+          children: const [
+            TravelBanner(),
+          ],
+          //travel banner
+
+          //row 2 card
+
+          //heading text
+
+          //listtiles
         ),
       ),
     );

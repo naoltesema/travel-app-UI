@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:newapps/homepage.dart';
 
 void main() {
@@ -11,11 +12,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomePage(),
-      // routes: {
-      //   "./PersonPage": (context) => const PersonPage(),
-      // },
-    );
+    return MaterialApp(
+        home: const HomePage(),
+        theme: ThemeData(
+          useMaterial3: true,
+          textTheme: GoogleFonts.ubuntuMonoTextTheme(),
+          colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xff0202fa)),
+        ));
   }
 }

@@ -6,7 +6,8 @@ class PersonPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white24,
+      body: SingleChildScrollView(),
     );
   }
 }
