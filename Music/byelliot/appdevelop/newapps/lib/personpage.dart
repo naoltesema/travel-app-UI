@@ -7,7 +7,7 @@ class PersonPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: Colors.white24,
-      body: SingleChildScrollView(),
+      body: Text('this is profile'),
     );
   }
 }
