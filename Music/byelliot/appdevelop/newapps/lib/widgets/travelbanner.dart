@@ -15,7 +15,12 @@ class TravelBanner extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Travel buddy'),
+                Text(
+                  'Travel buddy',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
                 Text('Touch the grass'),
               ],
             ),

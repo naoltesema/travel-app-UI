@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-
 import 'package:newapps/widgets/travelbanner.dart';
 
 class HomePage extends StatelessWidget {
@@ -57,8 +56,8 @@ class HomePage extends StatelessWidget {
       ),
       body: SafeArea(
         child: ListView(
-          padding: EdgeInsets.all(20),
-          children: const [
+          padding: const EdgeInsets.all(20),
+          children: [
             TravelBanner(),
           ],
           //travel banner
