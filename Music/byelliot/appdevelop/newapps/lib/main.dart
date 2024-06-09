@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: OnBoardingPage(),
+      home: const OnBoardingPage(),
       theme: ThemeData(
         useMaterial3: true,
         textTheme: GoogleFonts.ubuntuMonoTextTheme(),

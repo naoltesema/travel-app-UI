@@ -7,38 +7,44 @@ class OnBoardingPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: Color(0xff0202fa),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20),
-            ),
-            TypeWriter.text(
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20),
+          ),
+          ShaderMask(
+            shaderCallback: (bounds) => const LinearGradient(colors: [
+              Color(0xff0202fa),
+              Colors.black,
+            ]).createShader(bounds),
+            child: TypeWriter.text(
               'Hello welcome to buddy'
               ' Where you find awesome travel companions ',
               style: const TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w100,
-                fontSize: 30,
+                fontSize: 40,
               ),
               duration: const Duration(milliseconds: 100),
             ),
-            const SizedBox(
-              height: 20,
-            ),
-            ElevatedButton(
-              onPressed: () => Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => const HomePage(),
-                ),
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          ElevatedButton(
+            onPressed: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => const HomePage(),
               ),
-              child: const Text('get started'),
-            )
-          ],
-        ),
+            ),
+            child: const Text(
+              'get started',
+            ),
+          )
+        ],
       ),
     );
   }
