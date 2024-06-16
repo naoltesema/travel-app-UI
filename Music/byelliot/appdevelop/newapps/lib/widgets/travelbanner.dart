@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class TravelBanner extends StatelessWidget {
-  TravelBanner({super.key});
+  const TravelBanner({super.key});
   // final theme = Theme.of(context);
 
   @override
@@ -24,12 +24,13 @@ class TravelBanner extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 40),
-                const Text('Touch the grass'),
+                const Text('Touch the grass',
+                    style: TextStyle(color: Colors.white)),
                 const SizedBox(height: 10),
                 ElevatedButton.icon(
                     onPressed: () {},
-                    icon: Icon(Icons.flight),
-                    label: Text('travel now'))
+                    icon: const Icon(Icons.flight),
+                    label: const Text('travel now'))
               ],
             ),
           ],

@@ -5,9 +5,12 @@ class PersonPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Colors.white24,
-      body: Text('this is profile'),
+    return Scaffold(
+      backgroundColor: Color(0xff0202fa),
+      body: Text(
+        'this is profile screen',
+        style: TextStyle(color: Colors.white),
+      ),
     );
   }
 }

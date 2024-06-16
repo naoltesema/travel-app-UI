@@ -64,15 +64,10 @@ class HomePage extends StatelessWidget {
         child: ListView(
           padding: const EdgeInsets.all(20),
           children: [
-            TravelBanner(),
+            const TravelBanner(),
+            const TravelBanner(),
+            const TravelBanner(),
           ],
-          //travel banner
-
-          //row 2 card
-
-          //heading text
-
-          //listtiles
         ),
       ),
     );
