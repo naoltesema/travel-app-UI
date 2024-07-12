@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class PersonPage extends StatelessWidget {
-  const PersonPage({super.key});
+class ProfilePage extends StatelessWidget {
+  const ProfilePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: Color(0xff0202fa),
       body: Text(
         'this is profile screen',

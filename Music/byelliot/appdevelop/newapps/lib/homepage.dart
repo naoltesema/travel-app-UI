@@ -1,18 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:newapps/personpage.dart';
-import 'package:newapps/widgets/travelbanner.dart';
+import 'package:newapps/profilepage.dart';
+import 'package:newapps/widgets/communitypage.dart';
+import 'package:pedometer/pedometer.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  const HomePage({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     return Scaffold(
+      backgroundColor: Colors.black12,
       appBar: AppBar(
         title: Text(
-          'buddy',
+          'Buddy',
           style: TextStyle(
             color: theme.colorScheme.primary,
             fontWeight: FontWeight.bold,
@@ -36,40 +40,58 @@ class HomePage extends StatelessWidget {
             curve: Curves.easeOut,
             gap: 8,
             tabs: [
-              const GButton(
+//home page
+              GButton(
                 icon: Icons.home_outlined,
                 text: 'Home',
-                iconColor: Color(0xff0202fa),
+                iconColor: const Color(0xff0202fa),
+                onPressed: () => Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const HomePage(),
+                )),
               ),
+//community
               GButton(
-                icon: Icons.person,
-                text: 'profile',
-                iconColor: const Color.fromRGBO(2, 2, 250, 1),
-                onPressed: () => Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => const PersonPage(),
-                  ),
-                ),
+                icon: Icons.group_outlined,
+                text: 'Community',
+                iconColor: const Color(0xff0202fa),
+                onPressed: () => Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const CommunityPage(),
+                )),
               ),
-              const GButton(
-                icon: Icons.settings,
-                text: 'setting',
-                iconColor: Color(0xff0202fa),
-              ),
+
+//profile
+              GButton(
+                icon: Icons.person_outlined,
+                text: 'Profle',
+                iconColor: const Color(0xff0202fa),
+                onPressed: () => Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const ProfilePage(),
+                )),
+              )
             ],
           ),
         ),
       ),
-      body: SafeArea(
-        child: ListView(
-          padding: const EdgeInsets.all(20),
-          children: [
-            const TravelBanner(),
-            const TravelBanner(),
-            const TravelBanner(),
-          ],
-        ),
-      ),
+      body: const SafeArea(
+          child: Column(
+        children: [
+          Text('welcome buddy'),
+          SizedBox(height: 20),
+          Row(
+            children: [
+              Text('step counter'),
+              SizedBox(
+                width: 20,
+              ),
+              Text('walk hour'),
+              SizedBox(
+                width: 20,
+              ),
+              Text('calorie')
+            ],
+          ),
+        ],
+      )),
     );
   }
 }
