@@ -16,9 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const HomePage(
-        stepCountValue: '',
-      ),
+      home: const OnBoardingPage(),
       theme: ThemeData(
         useMaterial3: true,
         textTheme: GoogleFonts.ubuntuMonoTextTheme(),
