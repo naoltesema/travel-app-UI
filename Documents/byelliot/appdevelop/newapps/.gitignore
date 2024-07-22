@@ -1,0 +1,96 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+
+../../../../.android/
+        ../../../../.bash_history
+        ../../../../.bash_logout
+        ../../../../.bashrc
+        ../../../../.cache/
+        ../../../../.config/
+        ../../../../.dart-tool/
+        ../../../../.dart/
+        ../../../../.dartServer/
+        ../../../../.dotnet/
+        ../../../../.emulator_console_auth_token
+        ../../../../.flutter
+        ../../../../.flutter-devtools/
+        ../../../../.gitconfig
+        ../../../../.gnupg/
+        ../../../../.gradle/
+        ../../../../.icons/
+        ../../../../.java/
+        ../../../../.lesshst
+        ../../../../.local/
+        ../../../../.node_repl_history
+        ../../../../.npm/
+        ../../../../.pki/
+        ../../../../.profile
+        ../../../../.pub-cache/
+        ../../../../.ssh/
+        ../../../../.sudo_as_admin_successful
+        ../../../../.themes/
+        ../../../../.var/
+        ../../../../.vmware/
+        ../../../../.vscode/
+        ../../../../.wakatime.bdb
+        ../../../../.wakatime.cfg
+        ../../../../.wakatime/
+        ../../../../Android/
+        ../../../../Desktop/
+        ../../../../Documents/
+        ../../../../Downloads/
+        ../../../../EEEstuff/
+        ../../../
+        ../../../../Pictures/
+        ../../../../StudioProjects/
+        ../../../../Templates/
+        ../../../../android-studio/
+        ../../../../bin/
+        ../../../../flutter/
+        ../../../../git-cheat-sheet-education - git-cheat-sheet-education.pdf
+        ../../../../hello-html/
+        ../../../../mezmur/
+        ../../../../snap/
+        
